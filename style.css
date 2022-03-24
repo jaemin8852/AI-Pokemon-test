@@ -1,0 +1,538 @@
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .file-upload {
+    background-color: #f6f7fa;
+    border-radius: 10px;
+    border: solid 1.5px #f6f7fa;
+  }
+  
+  .file-upload-btn {
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    background: #1FB264;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #15824B;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .file-upload-btn:hover {
+    background: #1AA059;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  
+  .file-upload-btn:active {
+    border: 0;
+    transition: all .2s ease;
+  }
+  
+  .file-upload-content {
+    display: none;
+    text-align: center;
+  }
+  
+  .file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .image-upload-wrap {
+    position: relative;
+    object-fit: contain;
+    width: 57%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: dashed 1.5px #35465d;
+    background-color: #ffffff;
+  }
+  
+  .image-dropping,
+  .image-upload-wrap:hover {
+    background-color: #35465d;
+    border: 5px dashed #ffffff;
+  }
+  
+  .image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+  }
+  
+  .drag-text {
+    text-align: center;
+  }
+  
+  .drag-text h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #35465d;
+    padding: 60px 0;
+  }
+  
+  .file-upload-image {
+    max-height: 60%;
+    max-width: 60%;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .remove-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #cd4535;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #b02818;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .remove-image:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  
+  .remove-image:active {
+    border: 0;
+    transition: all .2s ease;
+  }
+
+  .try-again-btn {
+    border-radius: 40px;
+    border: solid 1.5px #35465d;
+    background-color: #35465d;
+  }
+  
+  .try-again-text {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    padding: 4px 15px;
+  }
+
+  .nav-distance{
+      padding: 2.1% 7.7%;
+  }
+
+  .navbar-light .navbar-brand{
+      font-family: NanumSquareR;
+      line-height: 1.68;
+      text-align: left;
+      color: #35465d;
+  }
+
+  .navbar-light .navbar-toggler{
+      border-color: #ffffff;
+  }
+
+  .section{
+      margin-top: 100px;
+  }
+
+  .title{
+      font-family: NanumSquareR;
+      line-height: 1.67;
+      text-align: center;
+      color: #35465d;
+  }
+
+  .subtitle{
+    font-family: NanumSquareR;
+    line-height: 1.53;
+    text-align: center;
+    color: #35465d;
+  }
+
+  @media screen and (max-width: 600px){
+      html{
+          font-size: 10px;
+      }
+      .navbar-brand{
+          font-size: 2rem;
+      }
+  }
+
+  .upload{
+    width: 20%;
+  }
+
+  .upload-txt{
+    font-family: NanumSquareR;
+    font-size: 1.5rem;
+    line-height: 1.53;
+    width: 50%;
+    text-align: center;
+    color: #35465d;
+    margin: 0 auto;
+  }
+
+.type-label {
+    width: 20%;
+    text-align: left;
+    height: 2rem;
+}
+#label-container {
+    width: 80%;
+    margin: 0 auto;
+}
+label {
+    cursor: pointer;
+    display: inline-block;
+    width: 90px;
+    height: 41px;
+    box-shadow: 0 0 0 8px #e5e9ea inset;
+    border-radius: 30px;
+    position: relative;
+  }
+.bar-container {
+    height: 2.7rem;
+  }
+.percent-text {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+.Normal-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(146, 153, 159, 0.2);
+  }
+.Normal-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(146, 153, 159, 1);
+  }
+
+.Fire-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(239,160,97,0.2);
+}
+.Fire-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(239,160,97,1);
+}
+
+.Water-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(96,143,207,0.2);
+}
+.Water-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(96,143,207);
+}
+
+.Grass-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(122,183,102,0.2);
+}
+.Grass-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(122,183,102);
+}
+
+.Electric-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(237,210,89,0.2);
+}
+.Electric-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(237,210,89);
+}
+
+.Ice-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(141,204,192,0.2);
+}
+.Ice-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(141,204,192);
+}
+
+.Fighting-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(188,75,106,0.2);
+}
+.Fighting-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: #bc4b6a;
+}
+
+.Poison-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color:  rgba(161,110,194,0.2);
+}
+.Poison-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(161,110,194);
+}
+
+.Ground-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(202,124,80,0.2);
+}
+.Ground-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(202,124,80);
+}
+
+.Flying-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(149,168,217,0.2);
+}
+.Flying-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(149,168,217);
+}
+
+.Psychic-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(229,120,121,0.2);
+}
+.Psychic-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(229,120,121);
+}
+
+.Bug-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(155,191,72,0.2);
+}
+.Bug-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(155,191,72);
+}
+
+.Rock-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(195,183,143,0.2);
+}
+.Rock-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(195,183,143);
+}
+
+.Ghost-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(87,105,167,0.2);
+}
+.Ghost-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(87,105,167);
+}
+
+.Dragon-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(51,108,190,0.2);
+}
+.Dragon-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(51,108,190);
+}
+
+.Dark-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(88,83,101,0.2);
+}
+.Dark-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(88,83,101);
+}
+
+.Steal-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(103,141,158,0.2);
+}
+.Steal-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(103,141,158);
+}
+
+.Fairy-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(220,148,225,0.2);
+}
+.Fairy-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(220,148,225);
+}
